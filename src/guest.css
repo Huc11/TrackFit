@@ -1,0 +1,527 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Guest Page Container */
+.guest-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f4f6;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+/* Full-Width Header */
+.guest-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Keeps title left, help right */
+    width: 95%;
+    padding: 15px 60px; /* Increased right padding */
+    background-color: #3b82f6;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+/* Logo & Title */
+.guest-title-container {
+    display: flex;
+    align-items: center;
+    padding-right: 30px;  /* Increase spacing on the right */
+    flex-grow: 1; /* Ensures it takes available space */
+}
+
+/* Logo */
+.guest-logo {
+    width: 70px;  /* Adjusted size */
+    height: 90px;
+    border-radius: 50%;
+    margin-right: 20px; /* Ensures spacing between logo & text */
+}
+
+/* Website Name */
+.guest-title {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+* Clickable Help Icon */
+.help-icon {
+    position: fixed;
+    top: 15px;        /* Adjusted for visibility */
+    right: 15px;      /* Ensure spacing */
+    z-index: 9999;    /* Keep it above everything */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    background-color: white;  /* Ensure visibility */
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 Help Icon Image */
+.help-logo {
+    width: 55px;  /* Increased size */
+    height: 55px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+/* 🔹 Hover Effect */
+.help-logo:hover {
+    opacity: 0.8;
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* 🔹 Ensure No Overlapping with Scroll */
+body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+.guest-header {
+    position: relative;  /* Ensure help icon does not get hidden */
+}
+/* Welcome Text */
+.welcome-text {
+  margin-top: 90px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #374151;
+  text-align: center;
+}
+
+/* 🔥 Promotion Section */
+.promotion-section {
+  display: flex;
+  align-items: center;
+  
+  justify-content: center;
+  background-color: #f97416d6;
+  color: white;
+  width: 100%;  /* Increased width */
+  max-width: 1500px;
+  height: 160px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* % Discount Box */
+.promo-discount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid white;
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+/* Promotion Text */
+.promo-text {
+  flex: 1;
+  text-align: left;
+}
+
+.promo-text h3 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.promo-text p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 2px;
+}
+
+/* Hover Effect */
+.promotion-section:hover {
+  background-color: #ea580c;
+  transform: scale(1.02);
+}
+
+/* 🔥 3/4 & 1/4 Layout */
+.main-content {
+  display: flex;
+  width: 100%;  /* Increased total width */
+  max-width: 1500px;
+  margin-top: 40px;
+  justify-content: space-between;
+  gap: 25px; /* Increased gap */
+}
+
+/* TrackFit Features Section (Wider than before) */
+.trackfit-features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #93c5fd;
+  padding: 40px;
+  width: 100%;  /* Increased from 74% */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Feature Title (Centered) */
+.trackfit-features h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Features Grid (Vertically Aligned) */
+.feature-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Feature Box */
+.feature-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 15px;
+  width: 220px;  /* Increased width */
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Feature Icon */
+.feature-icon {
+  width: 60px;  /* Increased */
+  height: 60px;
+}
+
+/* Feature Title */
+.feature-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Feature Description */
+.feature-description {
+  text-align: center;
+  font-size: 14px;
+  color: #374151;
+}
+
+/* Hover Effect */
+.feature-box:hover {
+  background-color: #60a5fa;
+}
+
+/* Signup Section (Increased width) */
+.signup-section {
+  width: 28%;  /* Increased from 25% */
+  background-color: white;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Signup Button */
+.signup-btn {
+  background-color: #3b82f6;
+  color: rgba(255, 255, 255, 0.947);
+  width: 400px;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.signup-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .trackfit-features, .signup-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.faq-section {
+    width: 100%;
+    max-width: 1500px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+  
+  .faq-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .faq-item {
+    background: #f3f4f6;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .faq-item:hover {
+    background-color: #e2e8f0;
+  }
+  
+  .faq-question {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .faq-answer {
+    font-size: 18px;
+    margin-top: 30px;
+    color: #374151;
+    text-align: left;
+  }
+  
+  /* 🔹 Responsive Design */
+  @media screen and (max-width: 768px) {
+    .main-content {
+      flex-direction: column;
+      align-items: center;
+    }
+    .trackfit-features, .signup-section, .faq-section {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  /* 🖼️ Dashboard Section Container */
+.dashboard-container {
+    display: flex;
+    width: 100%;
+    max-width: 1550px;
+    gap: 10px; /* Space between sections */
+    margin-top: 50px;
+  }
+  
+  /* 🖼️ Left 1/4 (GIF Image) */
+  .dashboard-left {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+  }
+  
+  .dashboard-gif {
+    width: 200%;
+    height: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 🖼️ Right 3/4 (Dashboard Image) */
+  .dashboard-right {
+    width: 60%;
+    height: 100%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+  }
+  
+  /* 🖼️ Dashboard Title */
+  .dashboard-title {
+    font-size: 35px;
+    font-weight: bold;
+    color: #374151;
+    margin-bottom: 20px;
+  }
+  
+  /* 🖼️ Dashboard Image */
+  .dashboard-image {
+    width: 100%;
+    height: 70%;
+    max-width: 850px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for dashboard image */
+  .dashboard-image:hover {
+    transform: scale(1.05);
+  }
+  
+  /* 🔹 Responsive Design */
+  @media screen and (max-width: 768px) {
+    .dashboard-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .dashboard-left, .dashboard-right {
+      width: 100%;
+    }
+  
+    .dashboard-gif {
+      max-width: 180px;
+    }
+}
+  /* 🌍 Footer Section */
+.footer {
+    background-color: #2563eb; /* Blue background for symmetry */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 40px;
+    width: 96%;
+    max-width: 2000px;
+  }
+  
+  /* 🔹 Footer Content (Centered) */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  /* 🌍 Social Media Links */
+  .footer-social {
+    margin-left: 5%;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .footer-social img {
+   
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .footer-social img:hover {
+    transform: scale(1.2);
+  }
+  
+  /* 🔹 Navigation Links */
+  .footer-nav {
+    display: flex;
+    gap: 25px;
+    justify-content: center; 
+    
+  }
+  
+  .footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out;
+    
+  }
+  
+  .footer-nav a:hover {
+    opacity: 0.7;
+  }
+  
+  /* 📌 Copyright Section */
+  .footer-copyright {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-right: 5%;
+    opacity: 0.8;
+  }
+  /* ✅ Preferences Panel Styling */
+.preferences-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* ✅ Title Styling */
+.preferences-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #374151;
+}
+
+/* ✅ Preferences Options (Stacking items vertically) */
+.preferences-options {
+  display: flex;
+  flex-direction: column; /* Ensures items stack */
+  align-items: center; /* Centers checkboxes and button */
+  gap: 12px; /* Spacing between elements */
+}
+
+/* ✅ Checkbox Label */
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #374151;
+  gap: 8px;
+}
+
+/* ✅ Save Preferences Button (Centered Below) */
+.preferences-btn {
+  background-color: #2563eb;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px; /* Ensures spacing between checkboxes and button */
+  width: auto; /* Keeps button compact */
+  text-align: center;
+}
+
+.preferences-btn:hover {
+  background-color: #1e40af;
+}
