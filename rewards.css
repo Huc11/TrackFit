@@ -1,0 +1,107 @@
+.rewards-container {
+    padding: 2rem;
+    background-color: #f3f4f6;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .rewards-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .main-heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subheading {
+    font-size: 1rem;
+    color: #6b7280;
+  }
+  
+  .badge-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    max-width: 1000px;
+    justify-content: center;
+    gap: 1.25rem;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  
+  .badge-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .badge-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .badge-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .motivation-box {
+    margin-top: 2rem;
+    text-align: center;
+    color: #4b5563;
+    font-style: italic;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  .back-btn-container {
+    margin-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1000px;
+  }
+  
+  .back-button {
+    background-color: #2563eb;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #1e40af;
+  }
+  
+  .badge-card.locked {
+    opacity: 0.5;
+    filter: grayscale(100%);
+    border: 1px dashed #ccc;
+    background-color: #f9f9f9;
+  }
+  
+  .badge-card.achieved {
+    background-color: #ffffff;
+    border: 2px solid #10b981; /* emerald */
+    box-shadow: 0 2px 8px rgba(16, 185, 129, 0.2);
+  }
+  .badge-card img {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto 10px auto;
+    display: block;
+  }
+  

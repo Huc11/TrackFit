@@ -1,0 +1,266 @@
+/* Page Container */
+.leaderboard-container {
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #e0f7fa, #fdfbfb);
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Welcome Banner (Updated Layout) */
+.welcome-banner {
+  background: linear-gradient(to right, #4f46e5, #3b82f6);
+  color: white;
+  width: 100%;
+  max-width: 850px;
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  margin-bottom: 1.8rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.welcome-subheading {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #e0e7ff;
+  text-align: center;
+}
+
+.username {
+  font-weight: 700;
+  color: #fcd34d;
+}
+
+.main-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-buttons button {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(to right, #2563eb, #3b82f6);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-buttons button:hover {
+  background: linear-gradient(to right, #1d4ed8, #2563eb);
+  transform: translateY(-2px);
+}
+
+/* Grid Layout */
+.leaderboard-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.left-panel,
+.right-panel {
+  flex: 1;
+  min-width: 350px;
+}
+
+/* Progress Tracker */
+.progress-tracker {
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.progress-tracker h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  color: #0f172a;
+}
+
+.progress-bar-bg {
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  height: 20px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  background: linear-gradient(to right, #10b981, #22d3ee);
+  height: 100%;
+  border-radius: 9999px;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 20px;
+  transition: width 0.4s ease;
+}
+
+/* Daily Check-In Summary */
+.checkin-summary {
+  background-color: #fefce8;
+  color: #92400e;
+  border: 2px solid #fde68a;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  font-size: 1rem;
+}
+
+.checkin-summary h4 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #78350f;
+}
+
+/* Weekly Goal Insights */
+.goal-insights {
+  background-color: #eef2ff;
+  color: #3730a3;
+  border-left: 6px solid #6366f1;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+.goal-insights h3 {
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.goal-insights ul {
+  padding-left: 1.25rem;
+  line-height: 1.75rem;
+}
+
+/* Chart Section */
+.charts-section {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+}
+
+.charts-section h3 {
+  margin-bottom: 1rem;
+  color: #111827;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+/* Top Performers and Weekly Challenges */
+.weekly-challenges,
+.top-performers {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+  margin-bottom: 1.5rem;
+}
+
+.weekly-challenges h3,
+.top-performers h3 {
+  color: #0f172a;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.15rem;
+}
+
+/* Tables */
+.challenge-table,
+.performers-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.challenge-table th,
+.challenge-table td,
+.performers-table th,
+.performers-table td {
+  border: 1px solid #e5e7eb;
+  padding: 0.9rem;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.challenge-table th,
+.performers-table th {
+  background-color: #f1f5f9;
+  font-weight: bold;
+  color: #1e293b;
+}
+
+/* Badges Section */
+.badges-section {
+  background-color: #fff1f2;
+  border: 2px solid #fecaca;
+  padding: 1.25rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.badges-section h3 {
+  color: #9f1239;
+  margin-bottom: 0.75rem;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.badge {
+  background-color: #fda4af;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Footer Motivation Quote */
+.motivation-box {
+  margin-top: 2rem;
+  background-color: #ecfccb;
+  color: #14532d;
+  padding: 1.2rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  font-style: italic;
+  font-size: 1rem;
+  max-width: 850px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}

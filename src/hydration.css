@@ -1,0 +1,97 @@
+.hydration-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.back-btn-container {
+  margin-bottom: 20px;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.hydration-heading {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 30px;
+}
+
+.hydration-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hydration-stats {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.hydration-stats h3 {
+  margin-top: 0;
+  color: #1e40af;
+}
+
+.hydration-chart {
+  height: 300px;
+}
+
+.hydration-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.custom-input {
+  display: flex;
+  gap: 10px;
+}
+
+.custom-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 5px;
+}
+
+.custom-input button {
+  padding: 10px 20px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quick-add-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.quick-add-btn {
+  padding: 10px 15px;
+  background: #bfdbfe;
+  color: #1e40af;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.quick-add-btn:hover {
+  background: #93c5fd;
+}
